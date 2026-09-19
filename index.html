@@ -142,11 +142,12 @@
         <div class="contato__container">
 
             
-            <form class="contato__form">
+            <form class="contato__form" id="formulario-contato">
                 <input class="contato__campo" type="text" placeholder="Seu nome" required>
                 <input class="contato__campo" type="email" placeholder="Seu e-mail" required>
                 <textarea class="contato__campo" placeholder="Digite sua mensagem" rows="5" required></textarea>
                 <button class="botao" type="submit">Enviar</button>
+                <p id="mensagem-formulario" role="status" aria-live="polite"></p>
             </form>
                     </div>
     </section>
@@ -155,6 +156,24 @@
         <p>&copy; 2026 Agência Criativa Web - Todos os direitos reservados.</p>
         <p>Endereço: Av. Criativa, 100 - São Paulo | Telefone: (11) 99999-9999 | E-mail: contato@agenciacriativaweb.com</p>
     </footer>
+
+    <script>
+        const formulario = document.getElementById('formulario-contato');
+        const mensagemFormulario = document.getElementById('mensagem-formulario');
+
+        formulario.addEventListener('submit', (evento) => {
+            evento.preventDefault();
+
+            try {
+                mensagemFormulario.textContent = 'Mensagem enviada com sucesso! Entraremos em contato em breve.';
+                mensagemFormulario.style.color = 'green';
+                formulario.reset();
+            } catch (erro) {
+                mensagemFormulario.textContent = 'Não foi possível enviar sua mensagem. Tente novamente.';
+                mensagemFormulario.style.color = 'red';
+            }
+        });
+    </script>
 
 </body>
 </html>
