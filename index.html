@@ -20,25 +20,25 @@
 <body>
 
     <!-- Cabeçalho -->
-    <header>
-        <div class="logo">Agência Criativa Web</div>
+    <header class="cabecalho">
+        <div class="cabecalho__logo">Agência Criativa Web</div>
 
         <nav>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <ul class="cabecalho__menu">
+                <li><a class="cabecalho__link" href="#home">Home</a></li>
+                <li><a class="cabecalho__link" href="#sobre">Sobre</a></li>
+                <li><a class="cabecalho__link" href="#servicos">Serviços</a></li>
+                <li><a class="cabecalho__link" href="#depoimentos">Depoimentos</a></li>
+                <li><a class="cabecalho__link" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Home -->
     <section id="home" class="banner">
-        <div class="banner-conteudo">
-            <h1>Transformamos ideias em experiências digitais incríveis</h1>
-            <p>
+        <div class="banner__conteudo">
+            <h1 class="banner__titulo">Transformamos ideias em experiências digitais incríveis</h1>
+            <p class="banner__texto">
                 Somos especialistas em design, branding e desenvolvimento web
                 para empresas que desejam crescer no ambiente digital.
             </p>
@@ -49,8 +49,8 @@
     <section id="sobre" class="secao">
         <h2>Sobre Nós</h2>
 
-        <div class="sobre-container">
-                      <img src="/equipe.png" alt="Equipe da agência" class="imagem-sobre">
+        <div class="sobre__container">
+                  <img src="/equipe.png" alt="Equipe da agência" class="sobre__imagem">
 
                  <p> A Agência Criativa Web nasceu com o propósito de criar
                     experiências digitais modernas, funcionais e memoráveis. Nossos valores são criatividade, inovação, compromisso e foco
@@ -58,7 +58,6 @@
                 </p>
 
                             </div>
-        </div>
 
 
 
@@ -69,7 +68,7 @@
     <section id="servicos" class="secao">
         <h2>Nossos Serviços</h2>
 
-        <div class="grid-servicos">
+        <div class="servicos__grid">
 
             <article class="card">
                 <h3>Design Gráfico</h3>
@@ -108,7 +107,7 @@
     <section id="depoimentos" class="secao">
         <h2>Depoimentos</h2>
 
-        <div class="depoimentos">
+        <div class="depoimentos__lista">
 
             <div class="card">
                 <p>
@@ -140,19 +139,19 @@
     <section id="contato" class="secao">
         <h2>Contato</h2>
 
-        <div class="contato-container">
+        <div class="contato__container">
 
             
-            <form>
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu e-mail" required>
-                <textarea placeholder="Digite sua mensagem" rows="5" required></textarea>
-                <button type="submit">Enviar</button>
+            <form class="contato__form">
+                <input class="contato__campo" type="text" placeholder="Seu nome" required>
+                <input class="contato__campo" type="email" placeholder="Seu e-mail" required>
+                <textarea class="contato__campo" placeholder="Digite sua mensagem" rows="5" required></textarea>
+                <button class="botao" type="submit">Enviar</button>
             </form>
                     </div>
     </section>
 
-    <footer>
+    <footer class="rodape">
         <p>&copy; 2026 Agência Criativa Web - Todos os direitos reservados.</p>
         <p>Endereço: Av. Criativa, 100 - São Paulo | Telefone: (11) 99999-9999 | E-mail: contato@agenciacriativaweb.com</p>
     </footer>
